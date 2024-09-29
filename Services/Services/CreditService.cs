@@ -27,7 +27,7 @@ namespace Cofidis.Services.Services
             var result = await _creditRepository.GrantingCredit(baseSalary);
 
             if (result == null) {
-
+                _logger.LogError("[CreditService - GrantingCredit] -> null object");
                 throw new Exception();
             }
 

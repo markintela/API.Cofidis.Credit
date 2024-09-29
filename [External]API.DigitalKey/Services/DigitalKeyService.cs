@@ -20,8 +20,8 @@ namespace _External_API.DigitalKey.Services
                     Nationality = "Portuguese",
                     Loans = new List<Loan>
                     {
-                        new Loan { Date = DateTime.Now.AddMonths(-6), Amount = 5000.00m, IsActive = true },
-                        new Loan { Date = DateTime.Now.AddYears(-1), Amount = 2000.00m, IsActive = false }
+                        new Loan { Date = DateTime.Now.AddMonths(-6), Amount = 500, IsActive = true },
+                        new Loan { Date = DateTime.Now.AddYears(-1), Amount = 2000, IsActive = false }
                     }
                 },
                 new User
@@ -33,7 +33,7 @@ namespace _External_API.DigitalKey.Services
                     Nationality = "Brazilian",
                     Loans = new List<Loan>
                     {
-                        new Loan { Date = DateTime.Now.AddMonths(-3), Amount = 3000.00m, IsActive = false }
+                        new Loan { Date = DateTime.Now.AddMonths(-3), Amount = 3000, IsActive = false }
                     }
                 }
             };

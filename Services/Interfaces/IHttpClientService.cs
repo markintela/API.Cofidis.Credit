@@ -9,7 +9,7 @@ namespace Cofidis.Services.Interfaces
 {
     public interface IHttpClientService
     {
-        Task<User> GetExternalUserByNIF(string nif);
+        Task<User?> GetExternalUserByNIF(string nif);
 
     }
 }
