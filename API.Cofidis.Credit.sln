@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35027.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Cofidis.Credit", "API.Cofidis.Credit\API.Cofidis.Credit.csproj", "{EDF5399C-297D-456C-85EA-0C27F428DBE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cofidis.Services", "Services\Cofidis.Services.csproj", "{EA9A1853-E54B-4496-A0BC-CDE1B5FBC5CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cofidis.Data", "Data\Cofidis.Data.csproj", "{05ABDC1F-9343-42C5-9C8A-1F864BF410FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cofidis.ViewModel", "Cofidis.Manager\Cofidis.ViewModel.csproj", "{EAEA7761-369D-4C63-B289-028D34ACE8C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "[External]API.DigitalKey", "[External]API.DigitalKey\[External]API.DigitalKey.csproj", "{BA2DDB09-2DD1-4BA3-A5CF-E17CD4C2E9CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API.Cofidis.Credit.Tests", "API.Cofidis.Credit.Tests\API.Cofidis.Credit.Tests.csproj", "{FDDEEE66-87AE-48F2-8B21-FC704F2A2FC8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDF5399C-297D-456C-85EA-0C27F428DBE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDF5399C-297D-456C-85EA-0C27F428DBE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDF5399C-297D-456C-85EA-0C27F428DBE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDF5399C-297D-456C-85EA-0C27F428DBE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA9A1853-E54B-4496-A0BC-CDE1B5FBC5CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA9A1853-E54B-4496-A0BC-CDE1B5FBC5CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA9A1853-E54B-4496-A0BC-CDE1B5FBC5CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA9A1853-E54B-4496-A0BC-CDE1B5FBC5CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05ABDC1F-9343-42C5-9C8A-1F864BF410FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05ABDC1F-9343-42C5-9C8A-1F864BF410FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05ABDC1F-9343-42C5-9C8A-1F864BF410FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05ABDC1F-9343-42C5-9C8A-1F864BF410FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAEA7761-369D-4C63-B289-028D34ACE8C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAEA7761-369D-4C63-B289-028D34ACE8C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAEA7761-369D-4C63-B289-028D34ACE8C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAEA7761-369D-4C63-B289-028D34ACE8C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA2DDB09-2DD1-4BA3-A5CF-E17CD4C2E9CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA2DDB09-2DD1-4BA3-A5CF-E17CD4C2E9CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA2DDB09-2DD1-4BA3-A5CF-E17CD4C2E9CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA2DDB09-2DD1-4BA3-A5CF-E17CD4C2E9CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDDEEE66-87AE-48F2-8B21-FC704F2A2FC8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDDEEE66-87AE-48F2-8B21-FC704F2A2FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDDEEE66-87AE-48F2-8B21-FC704F2A2FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDDEEE66-87AE-48F2-8B21-FC704F2A2FC8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {75B67B3B-FE79-4C9C-8F8B-C25993EDC720}
+	EndGlobalSection
+EndGlobal
