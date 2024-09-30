@@ -18,7 +18,27 @@ Bem-vindo ao repositório da API.Credit.Cofidis. Este documento fornece instruç
 
 ### Passo 2: Criar a Procedure
 
-Para criar a procedure mencionada no e-mail, você precisará executar o código de criação enviado por e-mail.
+Para criar a procedure mencionada no e-mail, você precisará executar o código abaixo:
+
+CREATE PROCEDURE SP_DetermineCreditLimit
+    @baseSalary DECIMAL(18, 2),
+    @creditLimit DECIMAL(18, 2) OUTPUT
+AS
+BEGIN
+    IF @baseSalary <= 1000
+    BEGIN
+        SET @creditLimit = 1000;
+    END
+    ELSE IF @baseSalary > 1000 AND @baseSalary <= 2000
+    BEGIN
+        SET @creditLimit = 2000;
+    END
+    ELSE
+    BEGIN
+        SET @creditLimit = 5000;
+    END
+END;
+
 
 ### Passo 3: Executar Test Cases
 
