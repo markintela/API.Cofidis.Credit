@@ -16,8 +16,9 @@ Bem-vindo ao repositório da API.Credit.Cofidis. Este documento fornece instruç
      - **API.Cofidis.Credit**
    - Certifique-se de definir a ação desejada (Start ou Start without debugging) para cada projeto.
 
-### Passo 2: Criar a Procedure
-
+### Passo 2: Criar a Database e Procedure 
+Foi criada a rotina para criação da base de dados automática mas caso isso não funcione será necessário a criação manual da base de dados.
+### Dabatabase: DB_Credit_Cofidis 
 Para criar a procedure basta correr o código abaixo no sql managment studio para na base de dados criada pelo entity framework.
 
 CREATE PROCEDURE SP_DetermineCreditLimit
