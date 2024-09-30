@@ -12,8 +12,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\API.Credit.Cofidis\Data\Cofidis.Data.csproj" />
-    <ProjectReference Include="..\..\API.Credit.Cofidis\Services\Cofidis.Services.csproj" />
+    <ProjectReference Include="..\..\API.Cofidis.Credit\Data\Cofidis.Data.csproj" />
+    <ProjectReference Include="..\..\API.Cofidis.Credit\Services\Cofidis.Services.csproj" />
+    <ProjectReference Include="..\Cofidis.ViewModel\Cofidis.ViewModel.csproj" />
   </ItemGroup>
 
 </Project>
