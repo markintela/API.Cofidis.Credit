@@ -18,7 +18,7 @@ Bem-vindo ao repositório da API.Credit.Cofidis. Este documento fornece instruç
 
 ### Passo 2: Criar a Procedure
 
-Para criar a procedure mencionada no e-mail, você precisará executar o código abaixo:
+Para criar a procedure basta correr o código abaixo no sql managment studio para na base de dados criada pelo entity framework.
 
 CREATE PROCEDURE SP_DetermineCreditLimit
     @baseSalary DECIMAL(18, 2),
