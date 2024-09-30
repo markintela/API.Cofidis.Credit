@@ -31,23 +31,26 @@ namespace Cofidis.Services.Services
                 }
             };
 
-            var httpClient = _httpClientFactory.CreateClient();
-            var httpResponseMessage = await httpClient.SendAsync(httpRequestMessage);
-
-            if (httpResponseMessage.IsSuccessStatusCode)
+            try
             {
-                using var contentStream = await httpResponseMessage.Content.ReadAsStreamAsync();
+                var httpClient = _httpClientFactory.CreateClient();
+                var httpResponseMessage = await httpClient.SendAsync(httpRequestMessage);
 
-                _user = await JsonSerializer.DeserializeAsync<User>(contentStream, new JsonSerializerOptions
+                if (httpResponseMessage.IsSuccessStatusCode)
                 {
-                    PropertyNameCaseInsensitive = true 
-                });
-            }
-            else
-            {
-                return null;
-            }
+                    using var contentStream = await httpResponseMessage.Content.ReadAsStreamAsync();
 
+                    _user = await JsonSerializer.DeserializeAsync<User>(contentStream, new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+         
             return _user;
         }
     }

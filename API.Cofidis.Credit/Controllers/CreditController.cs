@@ -60,12 +60,12 @@ namespace API.Cofidis.Credit.Controllers
 
             };
 
-            
+
             var riskIndex = _creditValidatorService.CalculateRiskIndex(ConstantsRiskAnalysis.UnemploymentTax, ConstantsRiskAnalysis.InflationTaxes, user.Loans.Where(x => x.IsActive).Count(),(double)user.Loans.Where(x => x.IsActive).Sum(x => x.Amount),(double)baseSalary);
            
             _logger.LogInformation("[CreditController - GrantingCredit - CalculateRiskIndex] -> riskIndex:", riskIndex);
 
-            var creditAvaibility = await _creditValidatorService.CreditAvailability(riskIndex.Result, 0.6, baseSalary);
+            var creditAvaibility = await _creditValidatorService.CreditAvailability(riskIndex.Result, ConstantsRiskAnalysis.HighRiskThresholdCompany, baseSalary);
            
             _logger.LogInformation("[CreditController - GrantingCredit - CalculateRiskIndex] -> CreditAvailability:", creditAvaibility);
 

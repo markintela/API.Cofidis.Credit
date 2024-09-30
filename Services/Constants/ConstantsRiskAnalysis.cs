@@ -15,7 +15,7 @@ namespace Cofidis.Services.Constants
         public const double CreditHistoryWeight = 0.3;
         public const double DebtWeight = 0.2;
         public const double BaseSalaryWeight = 0.1;
-        public const double HighRiskThresholdCompany = 0.8;
+        public const double HighRiskThresholdCompany = 0.1;
 
         public const double UnemploymentTax = 5.0;
         public const double InflationTaxes = 3.0;
