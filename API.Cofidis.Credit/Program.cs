@@ -32,8 +32,19 @@ builder.Services.AddScoped<ICreditManager, CreditManager>();
 builder.Services.AddScoped<IHttpClientManager, HttpClientManager>();
 
 //Mappers
-builder.Services.AddAutoMapper(typeof(ClientUserMappingProfile)); // Registrar o AutoMapper com base no assembly atual
+builder.Services.AddAutoMapper(typeof(ClientUserMappingProfile));
 
+// Cors to call External API
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowSpecificOrigin",
+        builder =>
+        {
+            builder.WithOrigins("http://localhost:3000/")
+                   .AllowAnyHeader()
+                   .AllowAnyMethod();
+        });
+});
 
 // SQL Database Configuration
 var database = builder.Configuration.GetConnectionString("SqlConnection");
@@ -45,6 +56,12 @@ builder.Services.AddDbContext<DataContext>(options =>
 
 
 var app = builder.Build();
+
+// App Cors
+app.UseCors(x => x
+   .AllowAnyOrigin()
+   .AllowAnyMethod()
+  .AllowAnyHeader());
 
 // Swagger configuration
 if (app.Environment.IsDevelopment())
